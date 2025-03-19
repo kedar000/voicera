@@ -81,7 +81,7 @@ app.get('/restaurants', async (req, res) => {
   
       const total = await Restaurant.countDocuments(query);
   
-      res.json({¸
+      res.json({
         total,
         currentPage: Number(page),
         totalPages: Math.ceil(total / limit),
